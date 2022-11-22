@@ -12,4 +12,14 @@ public class Manager extends Employee{
         this.login = login;
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+
+                super.toString() +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

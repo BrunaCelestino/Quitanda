@@ -15,5 +15,12 @@ public abstract class Employee extends Person{
         this.scheduleTime = scheduleTime;
     }
 
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "registrationNumber='" + registrationNumber + '\'' +
+                ", bankInformation='" + bankInformation + '\'' +
+                ", scheduleTime=" + scheduleTime +
+                '}';
+    }
 }

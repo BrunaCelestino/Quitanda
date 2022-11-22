@@ -10,6 +10,8 @@ public abstract class Person {
     private String phone;
     private EnumRegisterType register;
 
+
+
     public Person(String name, String CPF, Address address, String email, String phone, EnumRegisterType register) {
         this.name = name;
         this.CPF = CPF;
@@ -17,5 +19,17 @@ public abstract class Person {
         this.email = email;
         this.phone = phone;
         this.register = register;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", CPF='" + CPF + '\'' +
+                ", address=" + address +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", register=" + register +
+                '}';
     }
 }
