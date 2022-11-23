@@ -23,13 +23,12 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", CPF='" + CPF + '\'' +
-                ", address=" + address +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", register=" + register +
-                '}';
+        return
+                "nome: " + name + '\'' +
+                ", CPF: " + CPF + '\'' +
+                ", endereço: " + address +
+                ", e-mail: " + email + '\'' +
+                ", telefone: " + phone + '\'' +
+                ", tipo de registro: " + register;
     }
 }

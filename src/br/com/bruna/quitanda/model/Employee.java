@@ -4,8 +4,8 @@ import br.com.bruna.quitanda.enums.EnumRegisterType;
 import br.com.bruna.quitanda.enums.EnumScheduleTime;
 
 public abstract class Employee extends Person{
-    private String registrationNumber;
-    private String bankInformation;
+    private final String registrationNumber;
+    private final String bankInformation;
     private EnumScheduleTime scheduleTime;
 
     public Employee(String name, String CPF, Address address, String email, String phone, EnumRegisterType register, String registrationNumber, String bankInformation, EnumScheduleTime scheduleTime) {
@@ -17,10 +17,10 @@ public abstract class Employee extends Person{
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "registrationNumber='" + registrationNumber + '\'' +
-                ", bankInformation='" + bankInformation + '\'' +
-                ", scheduleTime=" + scheduleTime +
-                '}';
+        return
+                super.toString() +
+                ", número do registro: " + registrationNumber + '\'' +
+                ", informações bancárias: " + bankInformation + '\'' +
+                ", horário de trabalho: " + scheduleTime + '\'';
     }
 }

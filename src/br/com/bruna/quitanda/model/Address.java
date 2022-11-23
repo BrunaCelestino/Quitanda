@@ -17,62 +17,15 @@ public class Address {
         this.zipcode = zipcode;
     }
 
-    public String getStreet() {
-        return Street;
-    }
-
-    public void setStreet(String street) {
-        Street = street;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public String getNeighborhood() {
-        return neighborhood;
-    }
-
-    public void setNeighborhood(String neighborhood) {
-        this.neighborhood = neighborhood;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getZipcode() {
-        return zipcode;
-    }
-
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
-    }
 
     @Override
     public String toString() {
-        return "Address:" +
-                "Street: " + Street + '\'' +
-                ", number: " + number + '\'' +
-                ", neighborhood: " + neighborhood + '\'' +
-                ", city: " + city + '\'' +
-                ", state: " + state + '\'' +
-                ", zipcode: " + zipcode + '\'';
+        return
+                "[ Rua: " + Street + '\'' +
+                ", número: " + number + '\'' +
+                ", bairro: " + neighborhood + '\'' +
+                ", cidade: " + city + '\'' +
+                ", estado: " + state + '\'' +
+                ", CEP: " + zipcode + '\'' + " ]";
     }
 }

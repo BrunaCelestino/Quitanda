@@ -9,4 +9,14 @@ public class Eatable extends Product{
         super(type, grossPrice, taxes, description, name);
         this.expirationDate = expirationDate;
     }
+
+    @Override
+    public String toString() {
+        return "Alimento: [" +
+                super.toString() +
+                ", data de validade: '" + expirationDate + '\'' +
+                ']';
+    }
+
+
 }

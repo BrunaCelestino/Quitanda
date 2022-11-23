@@ -1,5 +1,7 @@
 package br.com.bruna.quitanda.interfaces;
 
-public interface ProductValue {
-    void calculateFinalValue();
+import br.com.bruna.quitanda.model.Product;
+
+public interface ProductValue{
+   Product calculateFinalValue(Product product);
 }

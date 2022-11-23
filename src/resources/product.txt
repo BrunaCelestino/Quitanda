@@ -1,0 +1,3 @@
+Eatable: [nome: banana nanica', tipo: FRUIT, preço bruto: R$1.2, imposto: 12.0%, valor líquido: R$1.3439999999999999, descrição: banana nanica amarela', data de validade: '25/11/2022']
+Inedible [nome: esqueiro', tipo: OTHER, preço bruto: R$5.0, imposto: 12.0%, valor líquido: R$5.6, descrição: esqueiro roxo', garantia: '3 meses']
+Eatable: [nome: ovo', tipo: DAIRY, preço bruto: R$10.0, imposto: 15.0%, valor líquido: R$11.5, descrição: ovos da granja', data de validade: '30/12/2022']

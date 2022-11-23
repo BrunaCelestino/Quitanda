@@ -8,8 +8,7 @@ public class ValidationUtil {
 
 
         if (!CPF.matches("^[0-9]{3}(.)[0-9]{3}(.)[0-9]{3}(-)[0-9]{2}$")) {
-            System.err.println("message: Invalid CPF format. Please, check it and try again.");
-            System.err.println("details: Use the format -> xxx.xxx.xxx-xx");
+
             return false;
         } else {
 
@@ -20,8 +19,7 @@ public class ValidationUtil {
             String cpfChanged = strCPF;
 
             if (cpfChanged.length() != 11) {
-                System.err.println("message: Invalid CPF number. Please, check it and try again.");
-                System.err.println("details: A CPF number must be 11 digits long.");
+
                 return false;
 
             } else {
@@ -39,8 +37,7 @@ public class ValidationUtil {
                                 "99999999999"};
 
                 if (Arrays.asList(numbers).contains(cpfChanged)) {
-                    System.err.println("message: Invalid CPF number. Please, check it and try again.");
-                    System.err.println("details: The CPF numbers cannot be the same.");
+
                     return false;
                 } else {
 
@@ -51,8 +48,7 @@ public class ValidationUtil {
 
                     if (rest == 10) rest = 0;
                     if (rest != Integer.parseInt(strCPF.substring(9, 10), 10)) {
-                        System.err.println("message: Invalid CPF number. Please, check it and try again.");
-                        System.err.println("details: This is not an acceptable CPF format.");
+
                         return false;
 
                     } else {
@@ -64,12 +60,11 @@ public class ValidationUtil {
                         rest = (sum * 10) % 11;
                         if (rest == 10) rest = 0;
                         if (rest != Integer.parseInt(strCPF.substring(10, 11), 10)) {
-                            System.err.println("message: Invalid CPF number. Please, check it and try again.");
-                            System.err.println("details: This is not an acceptable CPF format.");
+
                             return false;
                         } else {
 
-                            System.out.printf("The CPF: %s is valid", CPF);
+
                             return true;
                         }
                     }
